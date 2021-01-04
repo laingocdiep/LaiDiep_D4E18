@@ -25,3 +25,18 @@ print(deleted_artist)
 # print(artists.index('Taylor Swift'))
 if 'Gigi Hadid' in artists:
     print(artists.index('Gigi Hadid'))
+
+
+# nested_list = [
+#     ['P', '-', '-', '-', '-'],
+#     ['-', '-', '-', '-', '-'],
+#     ['-', '-', '-', '-', '-'],
+#     ['-', '-', '-', '-', '-'],
+#     ['-', '-', '-', '-', '-']
+# ]
+# # ung dung cua nested list
+# # print(nested_list[y][x])   # truc toa do x,y
+# for y in range(len(nested_list)):
+#     for x in range(len(nested_list[y])):
+#         print(nested_list[y][x], end=' ')
+#     print()

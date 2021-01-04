@@ -1,4 +1,3 @@
-# still serious exercises
 # ex1
 inventory = {
     'gold' : 500,
@@ -35,6 +34,12 @@ result = count_number(nums)
 # else:
 #     print(f"{key} doesn't appear in my list")
 
+# other solution
+# count = 0
+# for i in rang(len(nums)):
+#     if nums[i] == key:
+#         count += 1
+
 # with count()
 # times = nums.count(key)
 # print(f'{key} appears {times} times in my list')
@@ -61,27 +66,4 @@ total_money = 0
 #     ''')
 # print(f"You would make {total_money} if you sold all of your food")
 
-# serious exercises
-# ex2
-def standardise(nums):
-    num = ''
-    result = ''
-    # bỏ những số 0 đứng trước
-    while nums[0] == '0':
-        nums.pop(0)
-    
-    # num là số đã bỏ các số 0 ở đầu 
-    for i in nums:
-        num += i
-    num = int(num)
 
-    while num >= 1000:
-        result = ',' + str(num % 1000) + result
-        num = num // 1000
-    result = str(num) + result
-    return result
-
-number = input('Enter your balance: ')
-nums = list(number)
-updated = standardise(nums)
-print(f'Your updated balance: ${updated}')
